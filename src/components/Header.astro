@@ -1,0 +1,23 @@
+---
+const menuItems = [
+  { href: '/', text: 'Home' },
+  { href: '/gallery', text: 'Gallery' },
+  { href: '/pricing', text: 'Pricing' },
+  { href: '/about', text: 'About' }
+];
+---
+
+<header class="bg-gray-900 text-white py-4">
+  <nav class="container mx-auto px-4">
+    <div class="flex justify-between items-center">
+      <a href="/" class="text-2xl font-bold text-purple-400">NeuroArt Studio</a>
+      <ul class="flex space-x-6">
+        {menuItems.map(item => (
+          <li>
+            <a href={item.href} class="hover:text-purple-400 transition-colors">{item.text}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+</header>

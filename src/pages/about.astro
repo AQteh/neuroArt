@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About - NeuroArt Studio">
+  <div class="relative bg-gradient-to-b from-purple-900 to-indigo-900 text-white py-20">
+    <div class="absolute inset-0 opacity-20">
+      <img 
+        src="https://images.unsplash.com/photo-1632516643720-e7f5d7d6ecc9?w=1800&q=80" 
+        alt="Background"
+        class="w-full h-full object-cover"
+      />
+    </div>
+    <div class="container mx-auto max-w-3xl px-4 relative z-10">
+      <h1 class="text-4xl font-bold mb-8">About NeuroArt Studio</h1>
+      
+      <div class="prose prose-lg prose-invert">
+        <p class="mb-6">
+          Welcome to NeuroArt Studio, where artificial intelligence meets artistic expression. We specialize in creating unique, 
+          AI-generated artwork that pushes the boundaries of creativity and technology.
+        </p>
+
+        <div class="my-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <img 
+            src="https://images.unsplash.com/photo-1638803040283-7a5ffd48dad5?w=800&q=80" 
+            alt="AI Art Process"
+            class="rounded-lg shadow-lg"
+          />
+          <img 
+            src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=800&q=80" 
+            alt="AI Art Example"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+
+        <h2 class="text-2xl font-bold mt-12 mb-4">Our Story</h2>
+        <p class="mb-6">
+          Founded in 2023, NeuroArt Studio emerged from a passion for both art and artificial intelligence. Our team of artists 
+          and AI specialists work together to create stunning visual experiences that blend human creativity with machine learning.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-12 mb-4">Our Process</h2>
+        <p class="mb-6">
+          We use state-of-the-art neural networks and machine learning algorithms to generate unique artwork based on your 
+          specifications. Each piece is carefully curated and refined to ensure the highest quality output.
+        </p>
+
+        <h2 class="text-2xl font-bold mt-12 mb-4">Our Mission</h2>
+        <p class="mb-6">
+          Our mission is to democratize art creation by making unique, personalized artwork accessible to everyone. We believe 
+          in the power of AI to enhance human creativity, not replace it.
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>

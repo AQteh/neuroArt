@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const artworks = [
+  {
+    title: "Abstract Dreams",
+    category: "Digital Art",
+    image: "https://images.unsplash.com/photo-1633167606207-d840b5070fc2?w=800&q=80"
+  },
+  {
+    title: "Neural Landscapes",
+    category: "Landscape",
+    image: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&q=80"
+  },
+  {
+    title: "Digital Portraits",
+    category: "Portrait",
+    image: "https://images.unsplash.com/photo-1638803040283-7a5ffd48dad5?w=800&q=80"
+  },
+  {
+    title: "AI Impressions",
+    category: "Abstract",
+    image: "https://images.unsplash.com/photo-1637858868799-7f26a0640eb6?w=800&q=80"
+  },
+  {
+    title: "Future Visions",
+    category: "Concept Art",
+    image: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=800&q=80"
+  },
+  {
+    title: "Synthetic Nature",
+    category: "Nature",
+    image: "https://images.unsplash.com/photo-1632516643720-e7f5d7d6ecc9?w=800&q=80"
+  }
+];
+---
+
+<Layout title="Gallery - NeuroArt Studio">
+  <div class="py-20 px-4">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-center mb-12">Art Gallery</h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {artworks.map(artwork => (
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+            <div class="h-64 overflow-hidden">
+              <img 
+                src={artwork.image} 
+                alt={artwork.title}
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2">{artwork.title}</h3>
+              <p class="text-gray-600">{artwork.category}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>
